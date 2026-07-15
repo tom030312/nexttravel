@@ -449,120 +449,98 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       
-<!-- Grid Kartu Rute -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Kartu Rute 1: Sukabumi ke Jakarta -->
-        <div class="bg-white rounded-3xl border border-slate-100 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-blue-500/20 transition duration-300 flex flex-col justify-between">
+      <!-- Kartu Rute 1 -->
+      <div class="bg-white rounded-3xl border border-slate-100 p-6 shadow-sm hover:shadow-md transition">
+        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold uppercase">Terlaris</span>
+        <h4 class="text-xl font-bold text-slate-900 mt-4">Sukabumi ➔ Jakarta</h4>
+        <p class="text-xs text-slate-500 mt-1">Layanan Eksekutif Door-to-Door</p>
+        <div class="mt-6 pt-4 border-t border-slate-105 flex justify-between items-center">
           <div>
-            <div class="flex justify-between items-center mb-6">
-              <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">Terlaris</span>
-              <span class="text-slate-400 text-xs font-medium"><i class="fas fa-couch"></i> Sisa 4 Kursi</span>
-            </div>
-            <h4 class="text-xl md:text-2xl font-black text-slate-900 flex items-center gap-2">
-              Sukabumi <span class="text-blue-500 text-lg">➔</span> Jakarta
-            </h4>
-            <p class="text-xs text-slate-500 mt-2 flex items-center gap-1.5">
-              <i class="fas fa-check-circle text-emerald-500"></i> Layanan Eksekutif Door-to-Door
-            </p>
-            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5">
-              <i class="fas fa-road text-blue-500"></i> Full Via Tol & Gratis Antar-Jemput
-            </p>
+            <span class="text-xs text-slate-400 line-through block">Rp 300.000</span>
+            <span class="text-emerald-500 text-2xl font-black">Rp 250.000</span>
           </div>
-          
-          <div class="mt-8 pt-6 border-t border-slate-100 flex justify-between items-center">
-            <div>
-              <span class="text-xs text-slate-400 line-through block font-medium">Rp 300.000</span>
-              <span class="text-emerald-500 text-2xl font-black tracking-tight">Rp 249.000</span>
-            </div>
-            <!-- TOMBOL LANGSUNG KE WA -->
-            <button onclick="pesanRuteLangsung('Sukabumi ➔ Jakarta', '249.000')" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-5 py-3 rounded-xl text-xs transition duration-200 shadow-md shadow-blue-900/10 cursor-pointer">
-              Pesan Tiket
-            </button>
-          </div>
+          <a href="#booking" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-4 py-2 rounded-xl text-xs transition">Pesan</a>
         </div>
-
-        <!-- Kartu Rute 2: Jampang ke Jakarta -->
-        <div class="bg-white rounded-3xl border border-slate-100 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-blue-500/20 transition duration-300 flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-center mb-6">
-              <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">Rute Cepat</span>
-              <span class="text-slate-400 text-xs font-medium"><i class="fas fa-couch"></i> Sisa 3 Kursi</span>
-            </div>
-            <h4 class="text-xl md:text-2xl font-black text-slate-900 flex items-center gap-2">
-              Jampang <span class="text-blue-500 text-lg">➔</span> Jakarta
-            </h4>
-            <p class="text-xs text-slate-500 mt-2 flex items-center gap-1.5">
-              <i class="fas fa-check-circle text-emerald-500"></i> Layanan Eksekutif Door-to-Door
-            </p>
-            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5">
-              <i class="fas fa-star text-amber-500"></i> Pilihan Utama Penumpang Selatan
-            </p>
-          </div>
-          
-          <div class="mt-8 pt-6 border-t border-slate-100 flex justify-between items-center">
-            <div>
-              <span class="text-xs text-slate-400 line-through block font-medium">Rp 350.000</span>
-              <span class="text-emerald-500 text-2xl font-black tracking-tight">Rp 299.000</span>
-            </div>
-            <!-- TOMBOL LANGSUNG KE WA -->
-            <button onclick="pesanRuteLangsung('Jampang ➔ Jakarta', '299.000')" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-5 py-3 rounded-xl text-xs transition duration-200 shadow-md shadow-blue-900/10 cursor-pointer">
-              Pesan Tiket
-            </button>
-          </div>
-        </div>
-
-        <!-- Kartu Rute 3: Sukabumi ke Bandara -->
-        <div class="bg-white rounded-3xl border border-slate-100 p-6 md:p-8 shadow-sm hover:shadow-xl hover:border-blue-500/20 transition duration-300 flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-center mb-6">
-              <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">Paling Dicari</span>
-              <span class="text-slate-400 text-xs font-medium"><i class="fas fa-plane"></i> Setiap Hari</span>
-            </div>
-            <h4 class="text-xl md:text-2xl font-black text-slate-900 flex items-center gap-2">
-              Sukabumi <span class="text-blue-500 text-lg">➔</span> Bandara CGK
-            </h4>
-            <p class="text-xs text-slate-500 mt-2 flex items-center gap-1.5">
-              <i class="fas fa-plane-departure text-purple-500"></i> Drop Off Langsung Terminal
-            </p>
-            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5">
-              <i class="fas fa-clock text-blue-500"></i> Jadwal Fleksibel 24 Jam
-            </p>
-          </div>
-          
-          <div class="mt-8 pt-6 border-t border-slate-100 flex justify-between items-center">
-            <div>
-              <span class="text-xs text-slate-400 line-through block font-medium">Rp 350.000</span>
-              <span class="text-emerald-500 text-2xl font-black tracking-tight">Rp 299.000</span>
-            </div>
-            <!-- TOMBOL LANGSUNG KE WA -->
-            <button onclick="pesanRuteLangsung('Sukabumi ➔ Bandara CGK', '299.000')" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-5 py-3 rounded-xl text-xs transition duration-200 shadow-md shadow-blue-900/10 cursor-pointer">
-              Pesan Tiket
-            </button>
-          </div>
-        </div>
-
       </div>
-       <!-- ================= LOGIKA JAVASCRIPT INTEGRASI WA2 ================= -->
-      <script>
-        function pesanRuteLangsung(rute, harga) {
-      const noHP = "6285722569477"; // Ganti dengan nomor WhatsApp Anda jika berbeda
-      
-      // Draft pesan otomatis khusus rute terpilih
-      const pesan = `Halo NextTravel, saya tertarik dengan Promo Rute berikut:\n\n` +
-                    `*📍 Rute Perjalanan:* ${rute}\n` +
-                    `*💵 Harga Promo:* Rp ${harga}\n\n` +
-                    `Mohon info ketersediaan kursi untuk keberangkatan terdekat. Terima kasih!`;
 
-      // Encode URL pesan agar aman dibaca browser
-      const encodedPesan = encodeURIComponent(pesan);
-      const waURL = `https://api.whatsapp.com/send?phone=${noHP}&text=${encodedPesan}`;
+      <!-- Kartu Rute 2 -->
+      <div class="bg-white rounded-3xl border border-slate-100 p-6 shadow-sm hover:shadow-md transition">
+        <span class="bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded-full font-bold uppercase">Rute Cepat</span>
+        <h4 class="text-xl font-bold text-slate-900 mt-4">Jampang ➔ Jakarta</h4>
+        <p class="text-xs text-slate-500 mt-1">Layanan Eksekutif Door-to-Door</p>
+        <div class="mt-6 pt-4 border-t border-slate-105 flex justify-between items-center">
+          <div>
+            <span class="text-xs text-slate-400 line-through block">Rp 350.000</span>
+            <span class="text-emerald-500 text-2xl font-black">Rp 250.000</span>
+          </div>
+          <a href="#booking" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-4 py-2 rounded-xl text-xs transition">Pesan</a>
+        </div>
+      </div>
 
-      // Buka tab WhatsApp baru
-      window.open(waURL, '_blank');
-    }
-      </script>
-       <!-- ================= LOGIKA JAVASCRIPT INTEGRASI WA2 ================= -->
+      <!-- Kartu Rute 3 -->
+      <div class="bg-white rounded-3xl border border-slate-100 p-6 shadow-sm hover:shadow-md transition">
+        <span class="bg-purple-100 text-purple-800 text-xs px-2.5 py-1 rounded-full font-bold uppercase">Paling Dicari</span>
+        <h4 class="text-xl font-bold text-slate-900 mt-4">Sukabumi ➔ Bandara</h4>
+        <p class="text-xs text-slate-500 mt-1">Layanan Drop Off Soekarno-Hatta</p>
+        <div class="mt-6 pt-4 border-t border-slate-105 flex justify-between items-center">
+          <div>
+            <span class="text-xs text-slate-400 line-through block">Rp 350.000</span>
+            <span class="text-emerald-500 text-2xl font-black">Rp 250.000</span>
+          </div>
+          <a href="#booking" class="bg-blue-900 hover:bg-blue-950 text-white font-bold px-4 py-2 rounded-xl text-xs transition">Pesan</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ALUR PEMESANAN ================= -->
+  <section id="alur" class="py-20 bg-slate-50 px-6 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">Cara Pesan</h2>
+        <p class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Pesan Mudah dalam 4 Langkah Praktis</p>
+        <p class="text-slate-600 mt-4">Tidak perlu antre panjang di terminal. Pesan secara instan langsung dari
+          handphone Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            1</div>
+          <h4 class="font-bold text-lg mb-2">Kirim Chat WA</h4>
+          <p class="text-sm text-slate-500">Klik tombol hubungi kami untuk terhubung langsung dengan admin WA
+            NextTravel.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            2</div>
+          <h4 class="font-bold text-lg mb-2">Verifikasi Data</h4>
+          <p class="text-sm text-slate-500">Admin kami akan memvalidasi rute, ketersediaan kursi, dan total tarif
+            transparan.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            3</div>
+          <h4 class="font-bold text-lg mb-2">Jemput di Rumah</h4>
+          <p class="text-sm text-slate-500">Driver profesional kami akan menjemput langsung ke depan rumah atau titik
+            kumpul Anda.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            4</div>
+          <h4 class="font-bold text-lg mb-2">Bayar di Tempat (COD)</h4>
+          <p class="text-sm text-slate-500">Lakukan pelunasan dengan aman secara tunai langsung kepada driver saat tiba
+            di lokasi tujuan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= FOOTER ================= -->
   <footer class="bg-slate-950 text-slate-400 py-12 px-6 border-t border-white/5">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
