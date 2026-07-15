@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextTravel | Layanan Travel & Carter Sukabumi Jabodetabek 24 Jam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Link Icon FontAwesome untuk ikon gratis yang elegan -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+  <!-- ================= NAVIGASI ================= -->
+  <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <span class="text-2xl font-black tracking-tight text-blue-600">Next<span
+            class="text-emerald-500">Travel</span></span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+        <a href="#layanan" class="hover:text-blue-600 transition">Layanan</a>
+        <a href="#rute" class="hover:text-blue-600 transition">Rute</a>
+        <a href="#tarif" class="hover:text-blue-600 transition">Tarif Armada</a>
+        <a href="#alur" class="hover:text-blue-600 transition">Cara Pesan</a>
+        <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+      </div>
+      <a href="https://wa.me/6285722569477?text=Halo%20NextTravel,%20saya%20ingin%20pesan%20travel%20reguler/carter"
+        target="_blank"
+        class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition flex items-center gap-2 text-sm">
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>CS 24 Jam</span>
+      </a>
+    </div>
+  </nav>
+  <!-- ================= HERO SECTION DENGAN FORMULIR DI KANAN ================= -->
+  <header
+    class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-16 md:py-24 px-6 overflow-hidden">
+    <!-- Efek Background Dot Grid -->
+    <div
+      class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]">
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+      <!-- SISI KIRI: Teks Promosi (Bergeser ke Kiri) -->
+      <div class="lg:col-span-7 text-left">
+        <span
+          class="bg-blue-500/10 text-blue-400 border border-blue-500/20 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold tracking-wide uppercase inline-block">
+          Layanan Travel & Carter Eksekutif Door-to-Door
+        </span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mt-6 leading-tight tracking-tight">
+          Perjalanan Berikutnya Lebih Nyaman Bersama <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">NextTravel</span>
+        </h1>
+        <p class="text-base md:text-lg text-slate-300 mt-6 max-w-xl leading-relaxed">
+          Layanan travel door-to-door, drop bandara, dan sewa mobil premium untuk wilayah Sukabumi, Jampang,
+          Jabodetabek, dan sekitarnya.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#tarif"
+            class="bg-white/10 hover:bg-white/15 border border-white/20 text-white px-6 py-3 rounded-xl font-semibold transition text-sm">
+            Lihat Estimasi Tarif
+          </a>
+          <a href="#armada"
+            class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 text-slate-300 px-6 py-3 rounded-xl font-semibold transition text-sm">
+            Pilihan Armada
+          </a>
+        </div>
+      </div>
+
+      <!-- SISI KANAN: Formulir Pesan Tiket (Sesuai Kotak Merah) -->
+      <div class="lg:col-span-5">
+        <div class="bg-white rounded-3xl p-6 md:p-8 shadow-2xl text-slate-800 border border-slate-100">
+          <h3 class="text-2xl font-bold text-center text-blue-900 mb-6">Pesan Tiket</h3>
+
+          <form id="ticketForm" class="space-y-4">
+            <!-- 1. Tanggal Keberangkatan -->
+            <div>
+              <label class="block text-xs font-bold text-blue-950 mb-1.5" for="tanggal">Tanggal Keberangkatan</label>
+              <input type="date" id="tanggal" required
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium text-slate-700 text-sm">
+            </div>
+
+            <!-- 2. Jumlah Penumpang -->
+            <div>
+              <label class="block text-xs font-bold text-blue-950 mb-1.5" for="penumpang">Jumlah Penumpang</label>
+              <select id="penumpang" required
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium text-slate-700 text-sm bg-white">
+                <option value="1">1 Orang</option>
+                <option value="2">2 Orang</option>
+                <option value="3">3 Orang</option>
+                <option value="4">4 Orang</option>
+                <option value="5">5 Orang atau lebih</option>
+              </select>
+            </div>
+
+            <!-- 3. Rute Perjalanan -->
+            <div>
+              <label class="block text-xs font-bold text-blue-950 mb-1.5" for="rute">Rute Perjalanan</label>
+              <select id="rute" required
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium text-slate-700 text-sm bg-white">
+                <option value="" disabled selected>-- Pilih Rute --</option>
+                <option value="Jampang Surade ke Jakarta">Jampang Surade ➔ Jakarta</option>
+                <option value="Geopark Ciletuh ke Jakarta">Geopark Ciletuh ➔ Jakarta</option>
+                <option value="Palabuhanratu ke Jakarta">Palabuhanratu ➔ Jakarta</option>
+                <option value="Kota Sukabumi ke Jakarta">Kota Sukabumi ➔ Jakarta</option>
+                <option value="Jampang Surade ke Tangerang/Bandara">Jampang Surade ➔ Tangerang / Bandara Soetta</option>
+                <option value="Kota Sukabumi ke Tangerang/Bandara">Kota Sukabumi ➔ Tangerang / Bandara Soetta</option>
+                <option value="Kota Sukabumi ke Bekasi/Karawang">Kota Sukabumi ➔ Bekasi / Karawang</option>
+                <option value="Kota Sukabumi ke Bekasi/Karawang">Kota Sukabumi ➔ Cianjur / Bandung</option>
+              </select>
+            </div>
+
+            <!-- 4. Jam Keberangkatan -->
+            <div>
+              <label class="block text-xs font-bold text-blue-950 mb-1.5" for="jam">Jam Keberangkatan</label>
+              <select id="jam" required
+                class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium text-slate-700 text-sm bg-white">
+                <option value="" disabled selected>~~ Pilih Jam Keberangkatan ~~</option>
+                <option value="Pagi (10.00 WIB)">Pagi (10.00 WIB)</option>
+                <option value="Siang (14.00 WIB)">Siang (14.00 WIB)</option>
+                <option value="Sore (17.00 WIB)">Sore (17.00 WIB)</option>
+              </select>
+            </div>
+
+            <!-- Tombol Pilih Kursi -->
+            <button type="button" onclick="kirimPemesanan()"
+              class="w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3.5 rounded-xl shadow-lg transition duration-200 text-center text-sm mt-2">
+              Pilih Kursi
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= LOGIKA JAVASCRIPT INTEGRASI WA ================= -->
+  <script>
+    // Atur tanggal default input ke hari ini secara otomatis
+    document.addEventListener("DOMContentLoaded", function () {
+      const today = new Date().toISOString().split('T')[0];
+      const tanggalInput = document.getElementById('tanggal');
+      if (tanggalInput) {
+        tanggalInput.value = today;
+      }
+    });
+
+    function kirimPemesanan() {
+      const noHP = "6285722569477"; // Nomor WhatsApp admin NextTravel
+      const tanggal = document.getElementById("tanggal").value;
+      const penumpang = document.getElementById("penumpang").value;
+      const rute = document.getElementById("rute").value;
+      const jam = document.getElementById("jam").value;
+
+      if (!rute) {
+        alert("Silakan pilih Rute Perjalanan terlebih dahulu.");
+        return;
+      }
+      if (!jam) {
+        alert("Silakan pilih Jam Keberangkatan terlebih dahulu.");
+        return;
+      }
+
+      // Format tanggal Indonesia (DD/MM/YYYY)
+      const dateParts = tanggal.split("-");
+      const formattedDate = dateParts.length === 3 ? `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}` : tanggal;
+
+      // Draft Deskripsi Pemesanan untuk WhatsApp
+      const pesan = `Halo NextTravel, saya ingin memesan tiket perjalanan berikut:\n\n` +
+        `*📅 Tanggal Keberangkatan:* ${formattedDate}\n` +
+        `*👥 Jumlah Penumpang:* ${penumpang} Orang\n` +
+        `*📍 Rute Perjalanan:* ${rute}\n` +
+        `*⏰ Jam Keberangkatan:* ${jam}\n\n` +
+        `Mohon info ketersediaan kursi dan proses booking selanjutnya. Terima kasih!`;
+
+      // Encode URL agar aman di WhatsApp
+      const encodedPesan = encodeURIComponent(pesan);
+      const waURL = `https://api.whatsapp.com/send?phone=${noHP}&text=${encodedPesan}`;
+
+      // Buka WA
+      window.open(waURL, '_blank');
+    }
+  </script>
+  <!-- ================= LAYANAN UTAMA ================= -->
+  <section id="layanan" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">Layanan Utama</h2>
+      <p class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Solusi Transportasi Darat Terbaik & Terlengkap
+      </p>
+      <p class="text-slate-600 mt-4">Kami melayani segala kebutuhan mobilitas harian Anda dengan standar kenyamanan
+        kelas eksekutif.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Layanan 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+        <div
+          class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+          <i class="fas fa-route"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Travel Eksekutif PP</h3>
+        <p class="text-slate-600 leading-relaxed text-sm">Layanan travel reguler door-to-door (jemput depan rumah, antar
+          sampai alamat tujuan) rute Sukabumi - Jabodetabek.</p>
+      </div>
+      <!-- Layanan 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+        <div
+          class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+          <i class="fas fa-plane-departure"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Drop Off Bandara</h3>
+        <p class="text-slate-600 leading-relaxed text-sm">Antar jemput khusus ke Bandara Soekarno-Hatta (CGK) dan Halim
+          Perdanakusuma tepat waktu tanpa cemas telat.</p>
+      </div>
+      <!-- Layanan 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+        <div
+          class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+          <i class="fas fa-car"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Carter / Drop Sekali Jalan</h3>
+        <p class="text-slate-600 leading-relaxed text-sm">Sewa satu mobil penuh secara privat untuk urusan keluarga,
+          dinas, atau rombongan tanpa bercampur penumpang lain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RUTE & ESTIMASI LINTAS ================= -->
+  <section id="rute" class="py-20 bg-slate-900 text-white px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Wilayah Operasional</span>
+          <h2 class="text-3xl md:text-5xl font-black mt-2 leading-tight">Cakupan Rute Luas & Terintegrasi</h2>
+          <p class="text-slate-400 mt-4 leading-relaxed">Kami melayani penjemputan dari pelosok Sukabumi Selatan hingga
+            wilayah perkotaan untuk didistribusikan ke Jabodetabek secara aman.</p>
+
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+              <span class="text-xs text-slate-400 block font-semibold">TENTUKAN TITIK JEMPUT:</span>
+              <p class="font-bold text-white mt-1 text-sm">Jampang Surade, Geopark Ciletuh, Palabuhanratu, Kota Sukabumi
+              </p>
+            </div>
+            <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+              <span class="text-xs text-emerald-400 block font-semibold">KOTA TUJUAN:</span>
+              <p class="font-bold text-white mt-1 text-sm">Jakarta, Bogor, Depok, Tangerang (Bandara), Bekasi, Cikarang,
+                Karawang</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+          <h3 class="text-lg font-bold mb-6 flex items-center gap-2 text-emerald-400">
+            <i class="fas fa-clock"></i> Estimasi Alur Perjalanan Utama
+          </h3>
+          <div class="relative border-l-2 border-emerald-500/30 pl-6 ml-2 space-y-6 text-sm">
+            <div class="relative">
+              <span class="absolute -left-[31px] bg-emerald-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <p class="font-bold">Jampang Surade / Geopark Ciletuh (Start)</p>
+            </div>
+            <div class="relative">
+              <span class="absolute -left-[31px] bg-blue-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <p class="font-bold">Palabuhanratu / Ciemas / Loji</p>
+            </div>
+            <div class="relative">
+              <span class="absolute -left-[31px] bg-blue-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <p class="font-bold">Kota Sukabumi / Ciawi / Bogor</p>
+            </div>
+            <div class="relative">
+              <span class="absolute -left-[31px] bg-blue-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <p class="font-bold">DKI Jakarta / Depok / Tangerang (Bandara)</p>
+            </div>
+            <div class="relative">
+              <span class="absolute -left-[31px] bg-emerald-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <p class="font-bold">Bekasi / Cikarang / Karawang (End)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================= pilihan armada ================= -->
+  <!-- ================= PILIHAN ARMADA (KENDARAAN) ================= -->
+  <section id="armada" class="bg-slate-900 text-white py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Header Bagian -->
+      <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-12">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold text-blue-400 uppercase tracking-widest block mb-2">KAPASITAS & TIPE
+            ARMADA</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white">Pilihan Unit Kendaraan Sewa & Carter Sukabumi</h2>
+          <p class="text-slate-400 mt-4 text-sm md:text-base leading-relaxed">
+            Dengan sistem carter mobil kami, Anda bebas menentukan waktu keberangkatan, rute tujuan, dan durasi
+            perjalanan tanpa terikat jadwal umum. Temukan armada yang pas untuk rombongan Anda.
+          </p>
+        </div>
+        <!-- Tombol Cek Harga -->
+        <div class="shrink-0">
+          <a href="https://wa.me/6285722569477?text=Halo,%20saya%20ingin%20tanya%20harga%20carter%20mobil..."
+            class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3.5 rounded-full font-bold shadow-lg shadow-emerald-500/20 transition flex items-center gap-2 text-sm">
+            <i class="fas fa-tags"></i> Cek Info Harga Carter
+          </a>
+        </div>
+      </div>
+
+      <!-- Grid Kartu Armada -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Mobil 1: Daihatsu Sigra -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-blue-500/30 transition duration-300">
+          <div class="p-6 pb-0">
+            <!-- Gradasi Background Foto -->
+            <div
+              class="bg-gradient-to-tr from-blue-600/20 to-emerald-500/20 rounded-2xl p-4 flex justify-center items-center h-48 overflow-hidden">
+              <img src="https://imgcdn.oto.com/large/gallery/color/7/1549/daihatsu-sigra-color-276375.jpg"
+                alt="Daihatsu Sigra"
+                class="object-contain w-full h-full transform hover:scale-105 transition duration-500">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Daihatsu Sigra (Hemat)</h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+              Irit BBM dan sangat nyaman. Pilihan carter paling ekonomis untuk perjalanan dinas kecil dan urusan
+              keluarga inti.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobil 2: Avanza / Xenia Baru -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-blue-500/30 transition duration-300">
+          <div class="p-6 pb-0">
+            <div
+              class="bg-gradient-to-tr from-blue-600/20 to-emerald-500/20 rounded-2xl p-4 flex justify-center items-center h-48 overflow-hidden">
+              <img
+                src="https://library.otr.id/assets/img/artikelmob/all-new-xenia-2022-kembaran-avanza-dengan-fitur-keselematan-asa-1.png"
+                alt="Avanza / Xenia Baru"
+                class="object-contain w-full h-full transform hover:scale-105 transition duration-500">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Avanza / Xenia Baru</h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+              Desain eksterior elegan dengan suspensi kabin empuk. Sangat ideal untuk layanan travel jarak jauh dan luar
+              kota.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobil 3: Daihatsu Luxio -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-blue-500/30 transition duration-300">
+          <div class="p-6 pb-0">
+            <div
+              class="bg-gradient-to-tr from-blue-600/20 to-emerald-500/20 rounded-2xl p-4 flex justify-center items-center h-48 overflow-hidden">
+              <img
+                src="https://assets.promediateknologi.id/crop/0x0:0x0/1200x0/webp/photo/p3/83/2024/05/20/Daihatsu-Luxio-841553743.jpg"
+                alt="Daihatsu Luxio"
+                class="object-contain w-full h-full transform hover:scale-105 transition duration-500">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Daihatsu Luxio</h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+              Memiliki bentuk "boxy" kabin lega dengan pintu geser praktis, menjanjikan headroom ekstra untuk kenyamanan
+              penumpang travel reguler.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobil 4: Toyota Innova Reborn -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-blue-500/30 transition duration-300">
+          <div class="p-6 pb-0">
+            <div
+              class="bg-gradient-to-tr from-blue-600/20 to-emerald-500/20 rounded-2xl p-4 flex justify-center items-center h-48 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/mufautoshow/image/upload/f_auto,f_auto/w_1200/v1608086374/moas/news/1604391565_toyota-innova-reborn-ini-dia-spesifikasi-dan-fitur-barunya.jpg"
+                alt="Toyota Innova Reborn"
+                class="object-contain w-full h-full transform hover:scale-105 transition duration-500">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Toyota Innova Reborn</h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+              Suspensi eksklusif paling empuk di kelasnya. Merupakan pilihan utama untuk kebutuhan tamu dinas instansi,
+              "VIP Drop Bandara", atau pebisnis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobil 5: Toyota Hiace Commuter -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-blue-500/30 transition duration-300">
+          <div class="p-6 pb-0">
+            <div
+              class="bg-gradient-to-tr from-blue-600/20 to-emerald-500/20 rounded-2xl p-4 flex justify-center items-center h-48 overflow-hidden">
+              <img src="https://www.pasaman-tour.com/wp-content/uploads/2017/08/Toyota-Hiace.jpg"
+                alt="Toyota Hiace Commuter"
+                class="object-contain w-full h-full transform hover:scale-105 transition duration-500">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Toyota Hiace Commuter</h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+              Kapasitas rombongan hingga 14 kursi dengan AC merata. Paling pas untuk rombongan wisata kecil, kondangan
+              keluarga, atau "study tour".
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobil 6: Medium & Big Bus Wisata -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-blue-500/30 transition duration-300">
+          <div class="p-6 pb-0">
+            <div
+              class="bg-gradient-to-tr from-blue-600/20 to-emerald-500/20 rounded-2xl p-4 flex justify-center items-center h-48 overflow-hidden">
+              <img src="https://ebooking.whitehorse.id/vehicle_cover_246/katalog.jpg_1753259557800.webp"
+                alt="Medium & Big Bus Wisata"
+                class="object-contain w-full h-full transform hover:scale-105 transition duration-500">
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Medium & Big Bus Wisata</h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+              Kendaraan "heavy-duty" dengan fasilitas TV dan karaoke. Solusi pariwisata terbaik untuk acara rombongan
+              besar sekolah dan instansi kementerian.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ================= pilihan armada ================= -->
+  <!-- ================= ESTIMASI TARIF ================= -->
+  <section id="tarif" class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">Daftar Tarif</h2>
+      <p class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Transparan, Flat & Bebas Cemas</p>
+      <p class="text-slate-600 mt-4">Estimasi tarif dasar per kursi untuk layanan Travel Reguler Eksekutif
+        (Door-to-Door).</p>
+    </div>
+
+    <!-- Tabel Responsif -->
+    <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-100">
+      <table class="w-full text-left border-collapse min-w-[600px]">
+        <thead>
+          <tr class="bg-slate-50 border-b border-slate-100 text-slate-600 font-bold text-sm">
+            <th class="p-5">Ke Area Tujuan ⬇</th>
+            <th class="p-5">Dari Jampang Surade</th>
+            <th class="p-5">Dari Geopark Ciletuh</th>
+            <th class="p-5">Dari Palabuhanratu</th>
+            <th class="p-5">Dari Kota Sukabumi</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 text-sm">
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">DKI Jakarta</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+          </tr>
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">Bogor Raya</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 200rb - 350rb</td>
+          </tr>
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">Depok</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 200rb - 300rb</td>
+          </tr>
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">Tangerang & Bandara</td>
+            <td class="p-5 text-slate-600">Rp 350rb - 400rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 400rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+          </tr>
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">Kota Bekasi</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 250rb - 300rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+          </tr>
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">Cikarang</td>
+            <td class="p-5 text-slate-600">Rp 350rb - 400rb</td>
+            <td class="p-5 text-slate-600">Rp 350rb - 400rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+            <td class="p-5 text-slate-600">Rp 300rb - 350rb</td>
+          </tr>
+          <tr class="hover:bg-slate-50/50 transition">
+            <td class="p-5 font-bold text-slate-900">Karawang Bar/Tim</td>
+            <td class="p-5 text-slate-600">Rp 400rb - 500rb</td>
+            <td class="p-5 text-slate-600">Rp 400rb - 450rb</td>
+            <td class="p-5 text-slate-600">Rp 350rb - 400rb</td>
+            <td class="p-5 text-slate-600">Rp 400rb - 450rb</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div
+      class="mt-8 bg-blue-50 border border-blue-100 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <p class="font-bold text-slate-900 text-lg">Butuh info harga Sewa Carter Mobil / Hiace privat?</p>
+        <p class="text-sm text-slate-600 mt-1">Dapatkan penawaran harga spesial borongan All-In (BBM, Sopir, Tol) yang
+          jauh lebih hemat.</p>
+      </div>
+      <a href="https://wa.me/6285722569477?text=Halo%20NextTravel,%20boleh%20minta%20info%20tarif%20carteran%20mobil?"
+        target="_blank"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition whitespace-nowrap">
+        Hubungi Admin Carter
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= ALUR PEMESANAN ================= -->
+  <section id="alur" class="py-20 bg-slate-50 px-6 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">Cara Pesan</h2>
+        <p class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Pesan Mudah dalam 4 Langkah Praktis</p>
+        <p class="text-slate-600 mt-4">Tidak perlu antre panjang di terminal. Pesan secara instan langsung dari
+          handphone Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            1</div>
+          <h4 class="font-bold text-lg mb-2">Kirim Chat WA</h4>
+          <p class="text-sm text-slate-500">Klik tombol hubungi kami untuk terhubung langsung dengan admin WA
+            NextTravel.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            2</div>
+          <h4 class="font-bold text-lg mb-2">Verifikasi Data</h4>
+          <p class="text-sm text-slate-500">Admin kami akan memvalidasi rute, ketersediaan kursi, dan total tarif
+            transparan.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            3</div>
+          <h4 class="font-bold text-lg mb-2">Jemput di Rumah</h4>
+          <p class="text-sm text-slate-500">Driver profesional kami akan menjemput langsung ke depan rumah atau titik
+            kumpul Anda.</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-12 h-12 bg-white text-blue-600 rounded-full shadow-sm flex items-center justify-center mx-auto mb-4 font-black">
+            4</div>
+          <h4 class="font-bold text-lg mb-2">Bayar di Tempat (COD)</h4>
+          <p class="text-sm text-slate-500">Lakukan pelunasan dengan aman secara tunai langsung kepada driver saat tiba
+            di lokasi tujuan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-400 py-12 px-6 border-t border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <span class="text-2xl font-black tracking-tight text-white">Next<span
+            class="text-emerald-500">Travel</span></span>
+        <p class="text-xs mt-2 text-slate-500">&copy; 2026 NextTravel Group. Seluruh Hak Cipta Dilindungi.</p>
+      </div>
+      <div class="flex gap-6 text-sm">
+        <a href="#layanan" class="hover:text-white transition">Layanan</a>
+        <a href="#rute" class="hover:text-white transition">Rute</a>
+        <a href="#tarif" class="hover:text-white transition">Tarif</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
