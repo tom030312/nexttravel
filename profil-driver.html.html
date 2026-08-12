@@ -1,231 +1,174 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Driver Professional - NextTravel</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome untuk Ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brandPrimary: '#0056b3',
-                        brandAccent: '#00bba7',
-                        brandDark: '#0f172a'
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Owner - Fanji & Putri Travel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 font-sans text-slate-800 antialiased">
+<body class="bg-gray-50 text-gray-800 font-sans pb-24">
 
-    <!-- Header / Navbar -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tight">
-                <span class="text-blue-600">Fanji &</span><span class="text-teal-500">Putri Travel</span>
-            </a>
-            <a href="https://wa.me/6285722569477?text=Halo%20NextTravel,%20saya%20ingin%20pesan%20travel%20reguler/carter" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition flex items-center gap-2">
-                <i class="fab font-bold fa-whatsapp text-lg"></i> CS 24 Jam
-            </a>
-        </div>
-    </header>
-
-    <!-- Hero / Main Profile Section -->
-<section class="max-w-4xl mx-auto px-4 pt-8 pb-6">
-    <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
-        <div class="h-32 bg-gradient-to-r from-blue-700 to-teal-500"></div>
-        <div class="px-6 pb-6 relative">
-            
-            <!-- Baris Foto Profile, Medsos, dan Status -->
-            <div class="-mt-16 mb-4 flex flex-wrap justify-between items-end gap-3">
-                
-                <!-- Foto Profile & Medsos -->
-                <div class="flex items-end gap-4">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=250" 
-                         alt="Foto Driver" 
-                         class="w-32 h-32 rounded-full border-4 border-white object-cover shadow-md">
-                    
-                    <!-- Ikon Media Sosial -->
-                    <div class="flex items-center gap-2 mb-2">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
-                           class="w-8 h-8 rounded-full bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-600 flex items-center justify-center transition" title="Facebook">
-                            <i class="fab fa-facebook-f text-sm"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-                           class="w-8 h-8 rounded-full bg-slate-100 hover:bg-pink-600 hover:text-white text-slate-600 flex items-center justify-center transition" title="Instagram">
-                            <i class="fab fa-instagram text-sm"></i>
-                        </a>
-                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" 
-                           class="w-8 h-8 rounded-full bg-slate-100 hover:bg-black hover:text-white text-slate-600 flex items-center justify-center transition" title="TikTok">
-                            <i class="fab fa-tiktok text-sm"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
-                           class="w-8 h-8 rounded-full bg-slate-100 hover:bg-blue-700 hover:text-white text-slate-600 flex items-center justify-center transition" title="LinkedIn">
-                            <i class="fab fa-linkedin-in text-sm"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Status Aktif -->
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 mb-2">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Aktif / Siap Jalan
-                </span>
-            </div>
-
-            <!-- Info Driver -->
-            <div>
-                <h1 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
-                    Budi Santoso 
-                    <i class="fas fa-check-circle text-blue-500 text-lg" title="Driver Terverifikasi"></i>
-                </h1>
-                <p class="text-slate-500 text-sm mb-3">Driver Eksekutif Senior • Domisili Sukabumi</p>
-
-                <!-- Rating & Bio singkat -->
-                <div class="flex items-center gap-4 text-sm mb-4 flex-wrap">
-                    <div class="flex items-center text-amber-500 font-semibold">
-                        <i class="fas fa-star mr-1"></i> 4.95 <span class="text-slate-400 font-normal ml-1">(120+ Trip)</span>
-                    </div>
-                    <div class="text-slate-500">
-                        <i class="fas fa-id-card text-slate-400 mr-1"></i> SIM B1 Umum
-                    </div>
-                    <div class="text-slate-500">
-                        <i class="fas fa-business-time text-slate-400 mr-1"></i> Pengalaman 8+ Tahun
-                    </div>
-                </div>
-
-                <p class="text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
-                    Mengutamakan keselamatan, ketepatan waktu, dan kenyamanan penumpang. Berpengalaman menguasai rute lintas <strong>Sukabumi - Jabodetabek</strong>, jalur tol, serta akses Bandara Soekarno-Hatta & Halim.
-                </p>
-            </div>
-        </div>
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-md mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-xl font-bold">
+        <span class="text-blue-600">Fanji &</span><span class="text-emerald-500">Putri Travel</span>
+      </div>
+      <a href="https://wa.me/628123456789" class="bg-emerald-500 text-white text-sm font-semibold px-4 py-2 rounded-full flex items-center gap-2 hover:bg-emerald-600 transition">
+        <i class="fab fa-whatsapp"></i> CS 24 Jam
+      </a>
     </div>
-</section>
+  </header>
 
-    <!-- Detail Rute & Armada Usaha -->
-    <section class="max-w-4xl mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- Spesialisasi Rute -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                <i class="fas fa-route text-blue-600"></i> Spesialisasi Rute
-            </h2>
-            <ul class="space-y-2 text-sm text-slate-700">
-                <li class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-                    <span>Sukabumi / Cianjur ➔ Jakarta</span>
-                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-medium">Door-to-Door</span>
-                </li>
-                <li class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-                    <span>Sukabumi ➔ Bandara Soetta / Halim</span>
-                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-medium">Drop Off</span>
-                </li>
-                <li class="flex items-center justify-between p-2 rounded-lg bg-slate-50">
-                    <span>Sukabumi ➔ Bekasi / Tangerang</span>
-                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-medium">Carter / Travel</span>
-                </li>
-            </ul>
-        </div>
+  <!-- Main Content Container -->
+  <main class="max-w-md mx-auto px-4 mt-6 space-y-6">
 
-        <!-- Kendaraan yang Sering Dibawa -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                <i class="fas fa-car text-teal-600"></i> Armada Pilihan
-            </h2>
-            <div class="space-y-3">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center font-bold">
-                        <i class="fas fa-shuttle-van"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-800">Toyota Innova Reborn / Avanza</h3>
-                        <p class="text-xs text-slate-500">AC Dingin, Kabin Bersih, Bebas Asap Rokok</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center font-bold">
-                        <i class="fas fa-bus"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-slate-800">Toyota Hiace Commuter</h3>
-                        <p class="text-xs text-slate-500">Kapasitas Rombongan & Carter Keluarga</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Card Profil Owner -->
+    <section class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center relative">
+      <div class="relative w-28 h-28 mx-auto mb-4">
+        <img src="https://via.placeholder.com/150" alt="Foto Owner" class="w-full h-full object-cover rounded-full border-4 border-emerald-500 shadow-md">
+        <span class="absolute bottom-0 right-0 bg-emerald-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full border-2 border-white">
+          Owner
+        </span>
+      </div>
+
+      <h1 class="text-xl font-bold text-gray-900 flex items-center justify-center gap-1">
+        Budi Santoso <i class="fas fa-check-circle text-blue-500 text-base"></i>
+      </h1>
+      <p class="text-sm font-medium text-emerald-600 mb-2">Owner Fanji & Putri Travel • Sukabumi</p>
+
+      <!-- Badges Info -->
+      <div class="flex justify-center items-center gap-4 text-xs text-gray-600 mb-4 bg-gray-50 py-2 rounded-xl border border-gray-100">
+        <div>
+          <span class="font-bold text-gray-900 block text-sm">10+ Tahun</span>
+          <span>Pengalaman</span>
         </div>
+        <div class="h-6 w-px bg-gray-200"></div>
+        <div>
+          <span class="font-bold text-gray-900 block text-sm">4.98 ★</span>
+          <span>Kepuasan Pelanggan</span>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-600 leading-relaxed">
+        Berkomitmen menyajikan layanan transportasi antar kota (Sukabumi - Jabodetabek) dan drop off bandara dengan armada yang selalu terawat, aman, dan tepat waktu untuk kenyamanan perjalanan Anda.
+      </p>
+
+      <!-- Social Links -->
+      <div class="flex justify-center gap-3 mt-4 text-gray-500">
+        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fab fa-facebook-f text-xs"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-pink-600 hover:text-white transition"><i class="fab fa-instagram text-xs"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition"><i class="fab fa-tiktok text-xs"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-700 hover:text-white transition"><i class="fab fa-linkedin-in text-xs"></i></a>
+      </div>
     </section>
 
-    <!-- Keunggulan Driver -->
-    <section class="max-w-4xl mx-auto px-4 py-4">
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-lg font-bold text-slate-900 mb-4">Standar Layanan Driver</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                <div class="p-3 bg-slate-50 rounded-xl">
-                    <i class="fas fa-shield-alt text-2xl text-blue-600 mb-2"></i>
-                    <h3 class="text-xs font-semibold text-slate-800">Defensive Driving</h3>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl">
-                    <i class="fas fa-clock text-2xl text-blue-600 mb-2"></i>
-                    <h3 class="text-xs font-semibold text-slate-800">Tepat Waktu</h3>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl">
-                    <i class="fas fa-smoking-ban text-2xl text-blue-600 mb-2"></i>
-                    <h3 class="text-xs font-semibold text-slate-800">Bebas Rokok</h3>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl">
-                    <i class="fas fa-concierge-bell text-2xl text-blue-600 mb-2"></i>
-                    <h3 class="text-xs font-semibold text-slate-800">Bantu Luggage</h3>
-                </div>
-            </div>
-        </div>
+    <!-- Layanan Utama Perusahaan -->
+    <section class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+      <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-2">
+        <i class="fas fa-route text-emerald-500"></i> Layanan Prioritas
+      </h2>
+      <ul class="space-y-2 text-xs text-gray-700">
+        <li class="flex items-start gap-2 bg-emerald-50 p-2.5 rounded-lg border border-emerald-100">
+          <i class="fas fa-check text-emerald-600 mt-0.5"></i>
+          <div><strong>Door-to-Door Travel:</strong> Sukabumi / Cianjur ➔ Jakarta & Jabodetabek</div>
+        </li>
+        <li class="flex items-start gap-2 bg-emerald-50 p-2.5 rounded-lg border border-emerald-100">
+          <i class="fas fa-check text-emerald-600 mt-0.5"></i>
+          <div><strong>Drop Off Bandara:</strong> Antar-Jemput Soekarno-Hatta & Halim Perdanakusuma</div>
+        </li>
+        <li class="flex items-start gap-2 bg-emerald-50 p-2.5 rounded-lg border border-emerald-100">
+          <i class="fas fa-check text-emerald-600 mt-0.5"></i>
+          <div><strong>Sewa & Carter:</strong> Khusus Perjalanan Keluarga, Rombongan, & Dinas</div>
+        </li>
+      </ul>
     </section>
 
-    <!-- Ulasan Penumpang / Testimoni -->
-    <section class="max-w-4xl mx-auto px-4 py-4 mb-8">
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center justify-between">
-                <span>Ulasan Penumpang</span>
-                <span class="text-xs text-blue-600 font-normal">Terverifikasi sistem</span>
-            </h2>
-            <div class="space-y-4">
-                <div class="border-b border-slate-100 pb-3">
-                    <div class="flex items-center justify-between mb-1">
-                        <span class="text-sm font-semibold text-slate-800">Rina Handayani</span>
-                        <div class="text-amber-400 text-xs">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-600">"Pak Budi sangat ramah dan bawa mobilnya halus banget. Sukabumi ke Soetta aman dan tepat waktu tanpa keburu-buru."</p>
-                </div>
-                <div class="border-b border-slate-100 pb-3">
-                    <div class="flex items-center justify-between mb-1">
-                        <span class="text-sm font-semibold text-slate-800">Hendra Wijaya</span>
-                        <div class="text-amber-400 text-xs">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-xs text-slate-600">"Carter untuk acara keluarga, unitnya bersih dan p Budi bantu angkat bawaan banyak. Sangat direkomendasikan!"</p>
-                </div>
-            </div>
+    <!-- Armada Perusahaan -->
+    <section class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+      <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-2">
+        <i class="fas fa-car text-emerald-500"></i> Pilihan Armada Resmi
+      </h2>
+      <div class="space-y-3">
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100">
+          <div class="bg-white p-2.5 rounded-lg text-emerald-500 shadow-sm"><i class="fas fa-shuttle-van text-lg"></i></div>
+          <div>
+            <h3 class="text-xs font-bold text-gray-900">Toyota Innova Reborn / Avanza</h3>
+            <p class="text-[11px] text-gray-500">AC Dingin • Bebas Asap Rokok • Maks. 5-6 Kursi</p>
+          </div>
         </div>
+        <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 border border-gray-100">
+          <div class="bg-white p-2.5 rounded-lg text-emerald-500 shadow-sm"><i class="fas fa-bus text-lg"></i></div>
+          <div>
+            <h3 class="text-xs font-bold text-gray-900">Toyota Hiace Commuter / Premio</h3>
+            <p class="text-[11px] text-gray-500">Kapasitas Rombongan • Nyaman & Luas</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Sticky Bottom Bar / Call to Action -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 shadow-lg z-40">
-        <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
-            <div>
-                <p class="text-xs text-slate-500">Pesan Travel Sekarang</p>
-                <p class="text-sm font-bold text-slate-900">Mulai Rp 250.000 <span class="text-xs font-normal text-slate-500">/kursi</span></p>
-            </div>
-            <a href="https://wa.me/6285722569477?text=Halo%20NextTravel,%20saya%20ingin%20pesan%20travel%20reguler/carter" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition shadow-md shadow-teal-100 flex items-center gap-2">
-                <i class="fab fa-whatsapp text-lg"></i> Jalan Sekarang 🚗
-            </a>
+    <!-- Komitmen Pelayanan Owner -->
+    <section class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+      <h2 class="text-base font-bold text-gray-900 mb-3">Komitmen Layanan Kami</h2>
+      <div class="grid grid-cols-2 gap-3 text-center">
+        <div class="p-3 bg-gray-50 rounded-xl border border-gray-100">
+          <i class="fas fa-shield-alt text-blue-500 text-lg mb-1"></i>
+          <h3 class="text-xs font-bold text-gray-900">Pengemudi Profesional</h3>
         </div>
+        <div class="p-3 bg-gray-50 rounded-xl border border-gray-100">
+          <i class="fas fa-clock text-blue-500 text-lg mb-1"></i>
+          <h3 class="text-xs font-bold text-gray-900">Jadwal Tepat Waktu</h3>
+        </div>
+        <div class="p-3 bg-gray-50 rounded-xl border border-gray-100">
+          <i class="fas fa-ban-smoking text-blue-500 text-lg mb-1"></i>
+          <h3 class="text-xs font-bold text-gray-900">Unit Bersih & Bebas Rokok</h3>
+        </div>
+        <div class="p-3 bg-gray-50 rounded-xl border border-gray-100">
+          <i class="fas fa-concierge-bell text-blue-500 text-lg mb-1"></i>
+          <h3 class="text-xs font-bold text-gray-900">Layanan CS 24/7</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="text-base font-bold text-gray-900">Ulasan Pelanggan</h2>
+        <span class="text-[10px] text-gray-400">Terverifikasi</span>
+      </div>
+      <div class="space-y-3">
+        <div class="border-b border-gray-100 pb-3">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xs font-bold text-gray-800">Rina Handayani</h3>
+            <span class="text-xs text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-[11px] text-gray-600 mt-1">"Pelayanan selalu memuaskan. Mobil bersih, driver ramah, dan perjalanan ke Soetta sangat lancar."</p>
+        </div>
+        <div>
+          <div class="flex justify-between items-center">
+            <h3 class="text-xs font-bold text-gray-800">Hendra Wijaya</h3>
+            <span class="text-xs text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-[11px] text-gray-600 mt-1">"Carter Hiace untuk acara keluarga sangat recommended. Pelayanan dari manajemen profesional."</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Footer Action (CTA) -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 shadow-lg z-50">
+    <div class="max-w-md mx-auto flex justify-between items-center">
+      <div>
+        <p class="text-[10px] text-gray-500">Pemesanan / Kerjasama</p>
+        <p class="text-xs font-bold text-emerald-600">Mulai Rp 250.000 <span class="text-[10px] text-gray-400 font-normal">/kursi</span></p>
+      </div>
+      <a href="https://wa.me/628123456789?text=Halo%20Owner%20NextTravel,%20saya%20ingin%20bertanya%20mengenai%20layanan/reservasi" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl flex items-center gap-2 shadow-md transition">
+        <i class="fab fa-whatsapp text-sm"></i> Hubungi Owner / CS
+      </a>
     </div>
+  </div>
 
 </body>
 </html>
