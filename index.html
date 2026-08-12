@@ -283,87 +283,83 @@
   <section id="rute" class="py-12 md:py-20 bg-slate-900 text-white px-4 md:px-8">
   <div class="max-w-7xl mx-auto">
     
-    <!-- Grid Utama: 1 Kolom di Mobile, 2 Kolom Seimbang di Desktop -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
-      
-      <!-- KOLOM KIRI: Teks Judul & Estimasi Alur -->
-      <div class="space-y-6">
-        <div>
-          <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest block mb-1">Wilayah Operasional</span>
-          <h2 class="text-2xl md:text-4xl lg:text-5xl font-black leading-tight">Cakupan Rute Luas &amp; Terintegrasi</h2>
-          <p class="text-slate-400 mt-3 text-sm md:text-base leading-relaxed">
-            Kami melayani penjemputan dari pelosok Sukabumi Selatan hingga wilayah perkotaan untuk didistribusikan ke Jabodetabek secara aman.
-          </p>
-        </div>
+    <!-- 1. Header Section (Full Width di Atas) -->
+    <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+      <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest block mb-2">Wilayah Operasional</span>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight">Cakupan Rute Luas &amp; Terintegrasi</h2>
+      <p class="text-slate-400 mt-3 text-sm md:text-base leading-relaxed">
+        Kami melayani penjemputan dari pelosok Sukabumi Selatan hingga wilayah perkotaan untuk didistribusikan ke Jabodetabek secara aman.
+      </p>
+    </div>
 
-        <!-- Timeline Estimasi Alur Perjalanan -->
-        <div class="bg-white/5 p-6 md:p-8 rounded-2xl border border-white/10 shadow-lg">
-          <h3 class="text-base md:text-lg font-bold mb-6 flex items-center gap-2 text-emerald-400">
-            <i class="fas fa-clock"></i> Estimasi Alur Perjalanan Utama
+    <!-- 2. Grid Content: 3 Kolom Seimbang di Desktop (Tidak Ada Ruang Kosong) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+      
+      <!-- Card 1: Estimasi Alur Perjalanan Utama -->
+      <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg flex flex-col justify-between">
+        <div>
+          <h3 class="text-sm font-bold text-emerald-400 tracking-wider uppercase mb-6 flex items-center gap-2">
+            <i class="fas fa-clock"></i> Estimasi Alur Perjalanan
           </h3>
-          <div class="relative border-l-2 border-emerald-500/30 pl-6 ml-2 space-y-6 text-xs md:text-sm">
+          <div class="relative border-l-2 border-emerald-500/30 pl-5 ml-2 space-y-5 text-xs md:text-sm">
             <div class="relative">
-              <span class="absolute -left-[31px] bg-emerald-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <span class="absolute -left-[27px] top-1 bg-emerald-500 w-3.5 h-3.5 rounded-full border-2 border-slate-900"></span>
               <p class="font-bold text-white">Jampang Surade / Geopark Ciletuh (Start)</p>
             </div>
             <div class="relative">
-              <span class="absolute -left-[31px] bg-blue-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
-              <p class="font-bold text-slate-200">Palabuhanratu / Ciemas / Loji</p>
+              <span class="absolute -left-[27px] top-1 bg-blue-500 w-3.5 h-3.5 rounded-full border-2 border-slate-900"></span>
+              <p class="text-slate-300">Palabuhanratu / Ciemas / Loji</p>
             </div>
             <div class="relative">
-              <span class="absolute -left-[31px] bg-blue-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
-              <p class="font-bold text-slate-200">Kota Sukabumi / Ciawi / Bogor</p>
+              <span class="absolute -left-[27px] top-1 bg-blue-500 w-3.5 h-3.5 rounded-full border-2 border-slate-900"></span>
+              <p class="text-slate-300">Kota Sukabumi / Ciawi / Bogor</p>
             </div>
             <div class="relative">
-              <span class="absolute -left-[31px] bg-blue-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
-              <p class="font-bold text-slate-200">DKI Jakarta / Depok / Tangerang (Bandara)</p>
+              <span class="absolute -left-[27px] top-1 bg-blue-500 w-3.5 h-3.5 rounded-full border-2 border-slate-900"></span>
+              <p class="text-slate-300">DKI Jakarta / Depok / Tangerang (Bandara)</p>
             </div>
             <div class="relative">
-              <span class="absolute -left-[31px] bg-emerald-500 w-4 h-4 rounded-full border-4 border-slate-900"></span>
+              <span class="absolute -left-[27px] top-1 bg-emerald-500 w-3.5 h-3.5 rounded-full border-2 border-slate-900"></span>
               <p class="font-bold text-white">Bekasi / Cikarang / Karawang (End)</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- KOLOM KANAN: Card Area Jemput & Kota Tujuan -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6">
-        
-        <!-- Card 1: Area Penjemputan Utama -->
-        <div class="bg-slate-800/80 rounded-2xl p-5 md:p-6 border border-slate-700/60 shadow-lg flex flex-col justify-start">
-          <h3 class="text-xs font-bold text-emerald-400 tracking-wider uppercase mb-4 flex items-center gap-2">
-            <i class="fas fa-map-marker-alt"></i> Area Penjemputan Utama
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-slate-700/80 text-white text-xs px-3 py-1.5 rounded-lg border border-slate-600/60 font-medium">Kota Sukabumi</span>
-            <span class="bg-slate-700/80 text-white text-xs px-3 py-1.5 rounded-lg border border-slate-600/60 font-medium">Geopark Ciletuh</span>
-            <span class="bg-slate-700/80 text-white text-xs px-3 py-1.5 rounded-lg border border-slate-600/60 font-medium">Palabuhanratu</span>
-            <span class="bg-slate-700/80 text-white text-xs px-3 py-1.5 rounded-lg border border-slate-600/60 font-medium">Jampang Surade</span>
-            <span class="bg-slate-700/80 text-white text-xs px-3 py-1.5 rounded-lg border border-slate-600/60 font-medium">Cibadak</span>
-            <span class="bg-slate-700/80 text-white text-xs px-3 py-1.5 rounded-lg border border-slate-600/60 font-medium">Cianjur</span>
-          </div>
+      <!-- Card 2: Area Penjemputan Utama -->
+      <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg flex flex-col justify-start">
+        <h3 class="text-sm font-bold text-emerald-400 tracking-wider uppercase mb-4 flex items-center gap-2">
+          <i class="fas fa-map-marker-alt"></i> Area Penjemputan Utama
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-700/80 text-white text-xs px-3 py-2 rounded-lg border border-slate-600/60 font-medium">Kota Sukabumi</span>
+          <span class="bg-slate-700/80 text-white text-xs px-3 py-2 rounded-lg border border-slate-600/60 font-medium">Geopark Ciletuh</span>
+          <span class="bg-slate-700/80 text-white text-xs px-3 py-2 rounded-lg border border-slate-600/60 font-medium">Palabuhanratu</span>
+          <span class="bg-slate-700/80 text-white text-xs px-3 py-2 rounded-lg border border-slate-600/60 font-medium">Jampang Surade</span>
+          <span class="bg-slate-700/80 text-white text-xs px-3 py-2 rounded-lg border border-slate-600/60 font-medium">Cibadak</span>
+          <span class="bg-slate-700/80 text-white text-xs px-3 py-2 rounded-lg border border-slate-600/60 font-medium">Cianjur</span>
         </div>
+      </div>
 
-        <!-- Card 2: Kota Tujuan (Jabodetabek) -->
-        <div class="bg-slate-800/80 rounded-2xl p-5 md:p-6 border border-slate-700/60 shadow-lg flex flex-col justify-start">
-          <h3 class="text-xs font-bold text-emerald-400 tracking-wider uppercase mb-4 flex items-center gap-2">
-            <i class="fas fa-location-arrow"></i> Kota Tujuan (Jabodetabek)
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">DKI Jakarta</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Bogor</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Depok</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Tangerang &amp; Bandara</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Bekasi</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Cikarang</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Karawang</span>
-            <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-1.5 rounded-lg border border-emerald-500/40">Bandung</span>
-          </div>
+      <!-- Card 3: Kota Tujuan (Jabodetabek) -->
+      <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/60 shadow-lg flex flex-col justify-start md:col-span-2 lg:col-span-1">
+        <h3 class="text-sm font-bold text-emerald-400 tracking-wider uppercase mb-4 flex items-center gap-2">
+          <i class="fas fa-location-arrow"></i> Kota Tujuan (Jabodetabek)
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">DKI Jakarta</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Bogor</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Depok</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Tangerang &amp; Bandara</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Bekasi</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Cikarang</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Karawang</span>
+          <span class="bg-emerald-500/20 text-emerald-300 font-semibold text-xs px-3 py-2 rounded-lg border border-emerald-500/40">Bandung</span>
         </div>
-
       </div>
 
     </div>
+
   </div>
 </section>
   <!-- ================= pilihan armada ================= -->
